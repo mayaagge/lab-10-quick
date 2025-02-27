@@ -10,11 +10,32 @@ public class Quick {
    * Once left ≥ right, swap the pivot (arr[0]) with arr[left].
   */
   public static int partition( int [] data, int start, int end){
+    int pivot = data[start]; 
     int left = start + 1;
     int right = end;
-    return -1;
+
+    while (left <= right) {
+      while (left <= right && data[left] <= pivot) {
+        left++;
+      }
+      while (left <= right && data[right] > pivot) {
+        right--;
+      }
+      if (left < right) {
+        swap(data, left, right);
+        left++;
+        right--;
+      }
+    swap(data, start, right);
+    return right; // Return pivot index
   }
 
+private static void swap(int[] arr, int i, int j) {
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}
+	  
    /* QuickSelect Wrapper Method */
   public static int quickSelect(int[] data, int k) {
 	return quickSelect(data, k, 0, data.length - 1);
