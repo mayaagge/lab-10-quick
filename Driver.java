@@ -3,8 +3,8 @@ public class Driver {
     int[]arr=new int[]{5,1,7,2,4};
     int pivot_position = Quick.partition(arr, 0, arr.length - 1);
     System.out.println(pivot_position);
-    int[]arr=new int[]{5,1,7,8,4};
-    int pivot_position1 = Quick.partition(arr, 0, arr.length - 1);
+    int[]arr1=new int[]{5,1,7,8,4};
+    int pivot_position1 = Quick.partition(arr1, 0, arr1.length - 1);
     System.out.println(pivot_position1);
     /* Partition Test Cases 
     *  Test your code multiple times
