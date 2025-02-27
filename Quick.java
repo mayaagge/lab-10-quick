@@ -27,8 +27,8 @@ public class Quick {
         right--;
       }
     }
-    swap(data, start, right);
-    return right; 
+    swap(data, start, left);
+    return pivot; 
   }
 
 private static void swap(int[] arr, int i, int j) {
