@@ -1,6 +1,6 @@
 public class Driver { 
   public static void main(String[] args) {
-    int[]arr=new int{1,5,7,2,4);
+    int[]arr=new int[]{1,5,7,2,4};
     int pivot_position = Quick.partition(arr, 0, arr.length - 1);
     System.out.println(pivot_position);
     /* Partition Test Cases 
