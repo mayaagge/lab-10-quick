@@ -52,7 +52,7 @@ private static void swap(int[] arr, int i, int j) {
   *    Kth element found return  the value [k-1]
   */
   public static int quickSelect(int[] data, int k, int start, int end){
-	  pivot = partition(data,start,end);
+	  int pivot = partition(data,start,end);
 	  if (pivot > k-1){
 		  quickSelect(data, k, start+1, end);
 	  }
