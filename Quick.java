@@ -27,7 +27,7 @@ public class Quick {
         right--;
       }
     }
-    swap(data, start, left);
+    swap(data, pivot, left);
     return pivot; 
   }
 
