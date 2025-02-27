@@ -15,10 +15,10 @@ public class Quick {
     int right = end;
 
     while (left <= right) {
-      while (left <= right && data[left] <= pivot) {
+      while (data[left] <= pivot) {
         left++;
       }
-      while (left <= right && data[right] > pivot) {
+      while (data[right] > pivot) {
         right--;
       }
       if (left < right) {
