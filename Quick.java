@@ -14,8 +14,8 @@ public class Quick {
     int pivot = data[rand]; 
     int left = start + 1;
     int right = end;
-    if (rand != 0){
-	swap(data, rand, 0);
+    if (rand != start){
+	swap(data, rand, start);
     }
     while (left <= right) {
       while (data[left] <= pivot) {
