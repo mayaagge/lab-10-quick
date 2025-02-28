@@ -18,11 +18,11 @@ public class Driver {
     *  Test your code multiple times
     *  k_element = Quick.quickSelect(yourArray, k);
    */ 
-    k_element = Quick.quickSelect(arr, 3);
+    int k_element = Quick.quickSelect(arr, 3);
     System.out.println(k_element);
-    k1_element = Quick.quickSelect(arr1, 2);
+    int k1_element = Quick.quickSelect(arr1, 2);
     System.out.println(k1_element);
-    k2_element = Quick.quickSelect(arr2, 7);
+    int k2_element = Quick.quickSelect(arr2, 7);
     System.out.println(k2_element);
   }
 } 
