@@ -13,21 +13,23 @@ public class Quick {
     int pivot = data[start]; 
     int left = start + 1;
     int right = end;
-
     while (left <= right) {
-      while (data[left] <= pivot && left<=right) {
+      while (data[left] <= pivot) {
         left++;
       }
-      while (data[left] > pivot && left<=right) {
-	swap(data, left, right);
+      while (data[right] > pivot) {
+        right--;
+      }
+      if (left < right) {
+        swap(data, left, right);
+        left++;
         right--;
       }
     }
-    data[start] = data[right];
-    data[right] = pivot;
+    swap(data, start, right);
     return right; 
   }
-
+	
 private static void swap(int[] arr, int i, int j) {
     int temp = arr[i];
     arr[i] = arr[j];
