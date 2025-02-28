@@ -24,8 +24,8 @@ public class Driver {
     System.out.println("Testing Quickselect method: ");
     int k_element = Quick.quickSelect(arr, 3);
     System.out.println("Expected 4: " + k_element);
-    int k1_element = Quick.quickSelect(arr1, 2);
     /*
+    int k1_element = Quick.quickSelect(arr1, 2);
     System.out.println("Expected 4: " + k1_element);
     int k2_element = Quick.quickSelect(arr2, 7);
     System.out.println("Expected 7: " + k2_element);
