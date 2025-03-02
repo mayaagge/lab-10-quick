@@ -64,7 +64,7 @@ private static void swap(int[] arr, int i, int j) {
 		  return quickSelect(data, k, pivot+1, end);
 	  }
 	  else{
-		  return data[pivot];
+		  return data[k-1];
 	  }
   }
   public static void quickSort(int[] data, int start, int end) {
