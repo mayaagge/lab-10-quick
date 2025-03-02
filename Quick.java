@@ -20,12 +20,10 @@ public class Quick {
 	swap(data, rand, start);
     }
     while (left <= right) {
-	    System.out.println("Left: " + left);
-	    System.out.println("Right: " + right);
-      while (data[left] <= pivot) {
+      while (data[left] <= pivot && left <= right) {
         left++;
       }
-      while (data[right] > pivot) {
+      while (data[right] > pivot && left<=right) {
         right--;
       }
       if (left < right) {
