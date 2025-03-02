@@ -23,6 +23,7 @@ public class Driver {
     System.out.println("Arr: " + Arrays.toString(arr));
     System.out.println("Arr1: " + Arrays.toString(arr1));
     System.out.println("Arr2: " + Arrays.toString(arr2));
+    System.out.println("------------------------------------");
     System.out.println("Testing Quickselect method: ");
     int k_element = Quick.quickSelect(arr, 3);
     System.out.println("Expected 4 for arr: " + k_element);
