@@ -58,14 +58,14 @@ private static void swap(int[] arr, int i, int j) {
 		  return data[start];
 	  }
 	  int pivot = partition(data,start,end);
-	  if (pivot == k){
+	  if (pivot == k-1){
 		  return data[pivot];
 	  }
-	  else if (pivot > k){
-		  return quickSelect(data, k, start, pivot-1);
+	  else if (pivot > k-1){
+		  return quickSelect(data, k-1, start, pivot-1);
 	  }
 	  else{
-		  return quickSelect(data, k, pivot+1, end);
+		  return quickSelect(data, k-1, pivot+1, end);
 	  }
   }
   public static void quickSort(int[] data, int start, int end) {
