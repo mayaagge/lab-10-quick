@@ -64,6 +64,8 @@ private static void swap(int[] arr, int i, int j) {
 	  else if (pivot < k-1){
 		  return quickSelect(data, k, pivot+1, end);
 	  }
-	  return data[k-1];
+	  else{
+		  return data[pivot];
+	  }
   }
 }
