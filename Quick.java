@@ -17,10 +17,10 @@ public class Quick {
     int right = end;
 
     while (left <= right) {
-      while (data[left] <= pivot && left <= right) {
+      while (left <= right && data[left] <= pivot ) {
         left++;
       }
-      while (data[right] > pivot && left<=right) {
+      while (left<=right && data[right] > pivot) {
         right--;
       }
       if (left < right) {
@@ -41,7 +41,7 @@ private static void swap(int[] arr, int i, int j) {
 	  
    /* QuickSelect Wrapper Method */
   public static int quickSelect(int[] data, int k) {
-	return quickSelect(data, k-1, 0, data.length - 1);
+	return quickSelect(data, k, 0, data.length - 1);
   }
 	
   /* QuickSelect method to find the k-th smallest element
@@ -58,10 +58,10 @@ private static void swap(int[] arr, int i, int j) {
 		  return data[start];
 	  }
 	  int pivot = partition(data,start,end);
-	  if (pivot == k){
+	  if (pivot == k-1){
 		  return data[pivot];
 	  }
-	  else if (pivot > k){
+	  else if (pivot > k-1){
 		  return quickSelect(data, k, start, pivot-1);
 	  }
 	  else{
