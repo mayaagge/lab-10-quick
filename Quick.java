@@ -67,4 +67,11 @@ private static void swap(int[] arr, int i, int j) {
 		  return data[pivot];
 	  }
   }
+  public static void quickSort(int[] data, int start, int end) {
+        if (start < end) {
+            int pivotIndex = partition(data, start, end); 
+            quickSort(data, start, pivotIndex - 1); 
+            quickSort(data, pivotIndex + 1, end); 
+	}
+  }
 }
