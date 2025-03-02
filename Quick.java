@@ -69,9 +69,9 @@ private static void swap(int[] arr, int i, int j) {
   }
   public static void quickSort(int[] data, int start, int end) {
         if (start < end) {
-            int pivotIndex = partition(data, start, end); 
-            quickSort(data, start, pivotIndex - 1); 
-            quickSort(data, pivotIndex + 1, end); 
+            int pivot = partition(data, start, end); 
+            quickSort(data, start, pivot - 1); 
+            quickSort(data, pivot + 1, end); 
 	}
   }
 }
