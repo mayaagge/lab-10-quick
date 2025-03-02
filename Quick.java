@@ -11,14 +11,13 @@ public class Quick {
   */
   public static int partition( int [] data, int start, int end){
     int rand = ((int) (Math.random()*(end-start+1)) + start);
-    System.out.println(rand);
     int pivot = data[rand]; 
-
-    int left = start + 1;
-    int right = end;
     if (rand != start){
 	swap(data, rand, start);
     }
+    int left = start + 1;
+    int right = end;
+
     while (left <= right) {
       while (data[left] <= pivot && left <= right) {
         left++;
