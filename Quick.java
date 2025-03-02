@@ -12,9 +12,7 @@ public class Quick {
   public static int partition( int [] data, int start, int end){
     int rand = ((int) (Math.random()*(end-start+1)) + start);
     int pivot = data[rand]; 
-    if (rand != start){
-	swap(data, rand, start);
-    }
+    swap(data, rand, start);
     int left = start + 1;
     int right = end;
 
